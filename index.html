@@ -24,8 +24,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 
 
-  <title>ScrewMimic</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <title>DUSDi</title>
+  <link rel="icon" type="image/x-icon" href="static/images/brain.ico">
   <!-- <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" -->
   <!-- rel="stylesheet"> -->
 
@@ -52,18 +52,17 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">&#128297 ScrewMimic:</h1>
-            <h2 class="subtitle is-2 publication-subtitle">Bimanual Imitation from Human Videos with Screw Space Projection</h2>
+            <h2 class="title is-2 publication-title">Disentangled Unsupervised Skill Discovery for<br> Efficient Hierarchical Reinforcement Learning</h2>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="https://arpitrf.github.io/" target="_blank">Arpit Bahety</a>,</span>
+                <a href="https://jiahenghu.github.io/" target="_blank">Jiaheng Hu</a>,</span>
                 <span class="author-block">
-                  <a href="https://priyankamandikal.github.io/" target="_blank">Priyanka Mandikal</a>,</span>
+                  <a href="https://wangzizhao.github.io/" target="_blank">Zizhao Wang</a>,</span>
                   <span class="author-block">
-                    <a href="https://babbatem.github.io/" target="_blank">Ben Abbatematteo</a>,</span>
+                    <a href="https://www.cs.utexas.edu/~pstone/" target="_blank">Peter Stone</a>&#x2020,</span>
                   <span class="author-block">
-                    <a href="https://robertomartinmartin.com/" target="_blank">Roberto Martín-Martín</a>
+                    <a href="https://robertomartinmartin.com/" target="_blank">Roberto Martín-Martín</a>&#x2020
                   </span>
                   </div>
 
@@ -74,9 +73,7 @@
                     <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
                   </div>
 
-                  <br>
-                  <span class="is-size-4 publication-venue">Robotics: Science and Systems (RSS), 2024<span>
-                  <h2 style="color: red;">Outstanding Student Paper Award Finalist</h2>
+                  <span class="is-size-5 publication-venue">NeurIPS 2024<span>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
@@ -104,18 +101,18 @@
 
                   <!-- ArXiv abstract Link -->
                   <span class="link-block">
-                    <a href="https://arxiv.org/abs/2405.03666" target="_blank"
+                    <a href="" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="ai ai-arxiv"></i>
                     </span>
-                    <span>arXiv</span>
+                    <span>Paper</span>
                   </a>
                 </span>
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/UT-Austin-RobIn/ScrewMimic" target="_blank"
+                    <a href="https://github.com/JiahengHu/DUSDi" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -125,7 +122,7 @@
                   </span>
 
                   <!-- Poster Link -->
-                  <span class="link-block">
+<!--                   <span class="link-block">
                     <a href="https://drive.google.com/file/d/1bQyNt9kq53Hxq0YhYtnohh3uAm-GoPp8/view?usp=drive_link" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -133,21 +130,18 @@
                     </span>
                     <span>Poster</span>
                   </a>
-                </span>
+                </span> -->
 
                 <!-- YouTube Link -->
-                <span class="link-block">
+<!--                 <span class="link-block">
                   <a href="https://www.youtube.com/watch?v=sPNoKgoxpuc" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="fa fa-play-circle"></i>
                   </span>
-                  <!-- </span>
-                    <img src="./static/images/youtube.jpeg" alt="Youtube">
-                  </span> -->
                   <span>Video</span>
                 </a>
-              </span>
+              </span> -->
             </div>
           </div>
         </div>
@@ -156,276 +150,247 @@
   </div>
 </section>
 
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <source src="static/videos/teaser.m4v"
-        type="video/mp4">
-      </video>
-      <!-- <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2> -->
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Bimanual manipulation is a longstanding challenge in robotics due to the large number of degrees of freedom and the strict spatial and temporal synchronization required to generate meaningful behavior. Humans learn bimanual manipulation skills by watching other humans and by refining their abilities through play. In this work, we aim to enable robots to learn bimanual manipulation behaviors from human video demonstrations and fine-tune them through interaction. Inspired by seminal work in psychology and biomechanics, we propose modeling the interaction between two hands as a serial kinematic linkage — as a screw motion, in particular, that we use to define a new action space for bimanual manipulation: screw actions. We introduce ScrewMimic, a framework that leverages this novel action representation to facilitate learning from human demonstration and self-supervised policy fine-tuning. Our experiments demonstrate that ScrewMimic is able to learn several complex bimanual behaviors from a single human video demonstration, and that it outperforms baselines that interpret demonstrations and fine-tune directly in the original space of motion of both arms.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
 <!-- Youtube video -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <!-- Paper video. -->
       <h2 class="title is-3" style="text-align: center;">Video</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
           <div class="publication-video">
-            <!-- Youtube embed code here -->
             <iframe src="https://www.youtube.com/embed/sPNoKgoxpuc?si=E-tlHVhpyN4LG4ol" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End youtube video -->
 
-<section class="section">
+
+<!-- Paper abstract -->
+<!-- <section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+           A hallmark of intelligent agents is the ability to learn reusable skills purely from unsupervised interaction with the environment. However, existing unsupervised skill discovery methods often learn entangled skills where one skill variable simultaneously influences many entities in the environment, making downstream skill chaining extremely challenging. We propose Disentangled Unsupervised Skill Discovery (DUSDi), a method for learning disentangled skills that can be efficiently reused to solve downstream tasks. DUSDi decomposes skills into disentangled components, where each skill component only affects one factor of the state space. Importantly, these skill components can be concurrently composed to generate low-level actions, and efficiently chained to tackle downstream tasks through hierarchical Reinforcement Learning. DUSDi defines a novel mutual-information-based objective to enforce disentanglement between the influences of different skill components, and utilizes value factorization to optimize this objective efficiently. Evaluated in a set of challenging environments, DUSDi successfully learns disentangled skills, and significantly outperforms previous skill discovery methods when it comes to applying the learned skills to solve downstream tasks. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End paper abstract -->
+
+
+<section class="section hero">
   <div class="container">
     <h2 class="title is-2" style="text-align: center;">Overview</h2>
     <div class="columns is-centered">
       <div class="column is-four-fifths is-centered has-text-centered">
         <div class="content has-text-justified">
           <p>
-            ScrewMimic inputs an RGB-D video of a human performing a bimanual task and uses off-the-shelf hand tracking (HT) 
-            models to extract a trajectory of wrist poses (&tau;<sup>h</sup><sub>l</sub>, &tau;<sup>h</sup><sub>r</sub>) and grasp contact 
-            points (g<sup>h</sup><sub>l</sub> , g<sup>h</sup><sub>r</sub> ). ScrewMimic interprets &tau;<sup>h</sup><sub>l</sub> and 
-            &tau;<sup>h</sup><sub>r</sub> as a screw motion between both hands to estimate screw axis parameters S<sup>h</sup>. 
-            Next, it applies geometric augmentations on the 3D object point cloud to train a PointNet model to estimate screw actions for novel
-            object views. Finally, the trained model generates an initial hypothesis that the robot executes and iteratively refines
-            using an autonomously generated reward signal. The successful data point is further used to improve the prediction model.        
+            Unsupervised skill discovery holds the promise of improving the sample efficiency of Reinforcement Learning, by learning a set of reusable skills through reward-free interaction with the environment. These skills can be later recombined to tackle multiple downstream tasks more efficiently. In practice, however, learning to use and recombine these skills can be extremely hard for an agent trying to solve downstream tasks, especially in complex domains.
+            We propose Disentangled Unsupervised Skill Discovery (DUSDi), a method for learning disentangled skills that can be efficiently reused to solve downstream tasks. DUSDi decomposes skills into disentangled components, where each skill component only affects one factor of the state space. Importantly, these skill components can be concurrently composed to generate low-level actions, and efficiently chained to tackle downstream tasks through hierarchical Reinforcement Learning. DUSDi defines a novel mutual-information-based objective to enforce disentanglement between the influences of different skill components, and utilizes value factorization to optimize this objective efficiently. Evaluated in a set of challenging environments, DUSDi successfully learns disentangled skills, and significantly outperforms previous skill discovery methods when it comes to applying the learned skills to solve downstream tasks. 
           </p>
         </div>
         <!-- Your image here -->
-        <img src="static/images/ScrewMimic_Method.png" alt="ScrewMimic Overview" width="100%"/>
-        <!-- <h2 class="subtitle has-text-centered">
-          TeleMoMa Overview. TeleMoMa consists of three components: the Human Interface acquires commands from the human using different input devices; the Teleoperation Channel defines the action command structure between the human and the robot interfaces, and, possibly, closes the loop with observations from the robot; and the Robot Interface implements a robot-specific mapping of actions to low-level robot commands. This architecture enables modularity and versatility -- combining multiple devices to achieve intuitive whole-body teleoperation for multiple tasks and robots.
-        </h2> -->
+        <img src="static/images/pull_figure-1.png" width="100%"/>
       </div>
     </div>
   </div>
 </section>
 
 
-<section class="section hero is-light">
+
+
+<section class="section hero  is-light">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered">
+            <div class="column is-full-width">
+              <h2 class="title is-3 has-text-centered" id="Simulation examples">Skills Visualization</h2>
+                <h2 class="title is-4 " id="Simulation examples">Random Skills Visualization</h2>
+
+                <p>
+                    Just like other skill discovery methods, we can visualize DUSDi skills by randomly sampling a skill vector z and visualize the skill policy's behaviors conditioning on z. Here are some results.
+                </p>
+
+
+                <div class="grid-container-one-no-box">
+                <div class="grid-item">
+                    <div class="card-static-container">
+                        <div class="card-container">
+                            <div class="card-wide">
+                              <div class="card-content">
+                                <div class="image-grid">
+                                  <img src="static/videos/media.gif" alt="Image 1">
+                                  <img src="static/videos/media(1).gif" alt="Image 2">
+                                  <img src="static/videos/media(2).gif" alt="Image 3">
+                                  <img src="static/videos/media(3).gif" alt="Image 4">
+                                </div>
+                                <h3><strong>iGibson</strong></h3>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="card-container">
+                            <div class="card-wide">
+                              <div class="card-content">
+                                <div class="image-grid">
+                                  <img src="static/videos/dmc1.gif" alt="Image 1">
+                                  <img src="static/videos/dmc2.gif" alt="Image 2">
+                                  <img src="static/videos/dmc3.gif" alt="Image 3">
+                                  <img src="static/videos/dmc4.gif" alt="Image 4">
+                                </div>
+                                <h3><strong>DMC-Walker</strong></h3>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="card-container">
+                            <div class="card-wide">
+                              <div class="card-content">
+                                <div class="image-grid">
+                                  <img src="static/videos/media(4).gif" alt="Image 1" style="border: 2px solid black;">
+                                  <img src="static/videos/media(5).gif" alt="Image 2" style="border: 2px solid black;">
+                                  <img src="static/videos/media(6).gif" alt="Image 3" style="border: 2px solid black;">
+                                  <img src="static/videos/media(7).gif" alt="Image 4" style="border: 2px solid black;">
+                                </div>
+                                <h3><strong>Particle</strong></h3>
+                              </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container is-max-desktop">
+      <h2 class="title is-4" id="Simulation examples">Disentangled Skills Visualization</h2>
+      <p>However, a more interesting way to visualize DUSDi skills is to randomly perturb a specific skill component/dimension and observe the overall effect on the system's behavior, where we expect only one factor of the environment to change value.</p>
+
+
+            <!-- Particle -->
+      <div class="columns is-centered">
+        <div class="column is-two-fifths">
+          <div class="card-mid">
+            <div class="card-content">
+              <div class="image-grid-two">
+                <img src="static/videos/ps1.gif"  style="border: 2px solid black;">
+                <img src="static/videos/ps2.gif"  style="border: 2px solid black;">
+              </div>
+              <h3>In Particle, perturbing one skill dimension would cause only one agent to shift its interaction with the landmark (in this case the grey agent)</h3>
+            </div>
+          </div>
+        </div>
+        <div class="column is-two-fifths">
+          <div class="card-mid">
+            <div class="card-content">
+              <div class="image-grid-two">
+                <img src="static/videos/media(17).gif"  style="border: 2px solid black;">
+                <img src="static/videos/media(18).gif"  style="border: 2px solid black;">
+              </div>
+              <h3>Perturbing another skill dimension causes another agent to drastically shift its interaction with the landmark (in this case the orange agent)</strong></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Particle & iG -->
+      <div class="columns is-centered">
+        <div class="column is-two-fifths">
+          <div class="card-mid">
+            <div class="card-content">
+              <div class="image-grid-two">
+                <img src="static/videos/media(19).gif"  style="border: 2px solid black;">
+                <img src="static/videos/media(20).gif"  style="border: 2px solid black;">
+              </div>
+              <h3>Of course, we can simultaneously perturb two skill dimensions such that two agents react  (in this case, the blue and the red agents)</h3>
+            </div>
+          </div>
+        </div>
+        <div class="column is-two-fifths">
+          <div class="card-mid">
+            <div class="card-content">
+              <div class="image-grid-two">
+                <img src="static/videos/media(13).gif" alt="Image 1">
+                <img src="static/videos/media(14).gif" alt="Image 2">
+              </div>
+              <h3>In iGibson (fetch), perturbing one skill dimension causes the robot to change position, while keeping its camera direction and end-effector direction fixed</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- First Row of Cards -->
+      <div class="columns is-centered">
+        <div class="column is-two-fifths">
+          <div class="card-mid">
+            <div class="card-content">
+              <div class="image-grid-two">
+                <img src="static/videos/media(8).gif" alt="Image 1">
+                <img src="static/videos/media(9).gif" alt="Image 2">
+              </div>
+              <h3>In iGibson (tiago), changing the first skill component causes the left hand wiping region to change (marked by red)</h3>
+            </div>
+          </div>
+        </div>
+        <div class="column is-two-fifths">
+          <div class="card-mid">
+            <div class="card-content">
+              <div class="image-grid-two">
+                <img src="static/videos/media(10).gif" alt="Image 1">
+                <img src="static/videos/media(11).gif" alt="Image 2">
+              </div>
+              <h3>Changing another skill component caused the right arm to shift wiping regions (marked by blue)</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Second Row of Cards -->
+      <div class="columns is-centered">
+        <div class="column is-two-fifths">
+          <div class="card-mid">
+            <div class="card-content">
+              <div class="image-grid-two">
+                <img src="static/videos/move.gif" alt="Image 1">
+                <img src="static/videos/move2.gif" alt="Image 2">
+              </div>
+              <h3>Yet another skill component caused the robot to switch position</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+<section class="section hero">
   <div class="container">
     <h2 class="title is-2" style="text-align: center;">Experiments</h2>
     <div class="columns is-centered">
-      <div class="column is-two-fifths">
-        <h3 style="text-align: center; font-weight: bold;">Human Demonstration</h3>
-        <video poster="" id="video2" autoplay controls muted loop height="100%" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
-          <!-- Your video file here -->
-          <source src="static/videos/human_bottle.mp4"
-          type="video/mp4">
-        </video>
-      </div>
-      <div class="column is-two-fifths">
-        <h3 style="text-align: center; font-weight: bold;">Robot Execution (Novel Object Pose)</h3>
-        <video poster="" id="video3" autoplay controls muted loop height="100%" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
-          <!-- Your video file here -->
-          <source src="static/videos/robot_bottle_final.m4v"
-          type="video/mp4">
-        </video>
-      </div>
-    </div>
-    
-    <div class="columns is-centered">
-      <div class="column is-two-fifths">
-        <video poster="" id="video2" autoplay controls muted height="100%" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
-          <!-- Your video file here -->
-          <source src="static/videos/human_jacket.mp4"
-          type="video/mp4">
-        </video>
-      </div>
-      <div class="column is-two-fifths">
-        <video poster="" id="video3" autoplay controls muted loop height="100%" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
-          <!-- Your video file here -->
-          <source src="static/videos/robot_jacket_final.m4v"
-          type="video/mp4">
-        </video>
-      </div>
-    </div>
+      <div class="column is-four-fifths is-centered has-text-centered">
+                <!-- Your image here -->
+                  <div class="content has-text-justified">
+          <p>
+            These disentangled skills can then be used as low-level policy in a hierarchical RL setting, achieving significantly superior downstream task learning performance compared to previous state-of-the-art methods. Please checkout our paper and code for a detailed description of our methods and experiments.
+          </p>
+        </div>
+        <img src="static/images/results.png" width="90%"/>
 
-    <div class="columns is-centered">
-      <div class="column is-two-fifths">
-        <video poster="" id="video2" autoplay controls muted height="100%" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
-          <!-- Your video file here -->
-          <source src="static/videos/human_laptop.mp4"
-          type="video/mp4">
-        </video>
-      </div>
-      <div class="column is-two-fifths">
-        <video poster="" id="video3" autoplay controls muted loop height="100%" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
-          <!-- Your video file here -->
-          <source src="static/videos/robot_laptop_final.m4v"
-          type="video/mp4">
-        </video>
       </div>
     </div>
-
-    <div class="columns is-centered">
-      <div class="column is-two-fifths">
-        <video poster="" id="video2" autoplay controls muted height="100%" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
-          <!-- Your video file here -->
-          <source src="static/videos/human_roll.mp4"
-          type="video/mp4">
-        </video>
-      </div>
-      <div class="column is-two-fifths">
-        <video poster="" id="video3" autoplay controls muted loop height="100%" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
-          <!-- Your video file here -->
-          <source src="static/videos/robot_roll_final.m4v"
-          type="video/mp4">
-        </video>
-      </div>
-    </div>
-
-    <div class="columns is-centered">
-      <div class="column is-two-fifths">
-        <video poster="" id="video2" autoplay controls muted height="100%" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
-          <!-- Your video file here -->
-          <source src="static/videos/human_stirring.mp4"
-          type="video/mp4">
-        </video>
-      </div>
-      <div class="column is-two-fifths">
-        <video poster="" id="video3" autoplay controls muted loop height="100%" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
-          <!-- Your video file here -->
-          <source src="static/videos/robot_stir_final.m4v"
-          type="video/mp4">
-        </video>
-      </div>
-    </div>
-
-    <div class="columns is-centered">
-      <div class="column is-two-fifths">
-        <video poster="" id="video2" autoplay controls muted height="100%" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
-          <!-- Your video file here -->
-          <source src="static/videos/human_cutting.mp4"
-          type="video/mp4">
-        </video>
-      </div>
-      <div class="column is-two-fifths">
-        <video poster="" id="video3" autoplay controls muted loop height="100%" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
-          <!-- Your video file here -->
-          <source src="static/videos/robot_cut_final.m4v"
-          type="video/mp4">
-        </video>
-      </div>
-    </div>
-
-    </br>
-    <h2 class="title is-4" style="margin-left: 11%;">Generalization Results on Novel Objects</h2>
-    <div class="columns is-centered" style="margin-left: 11%;margin-right: 9%;text-align: justify;">
-      <p>We Evaluate ScrewMimic on novel objects. Note that in this case, the screw action prediction model has not been trained on these new objects. As can be seen
-        in the following videos, ScrewMimic is able to fine-tune the screw action to successfully manipulate novel objects. In the paper we 
-        further show that if we re-train the screw axis prediction model with the corrected screw action,  ScrewMimic can complete the task with the new object almost zero-shot. 
-        This indicates that ScrewMimic helps create a self- learning loop where the robot can continually expand its manipulation capabilities 
-        to new objects.</p>
-    </div>
-    
-    <div class="columns is-centered">
-      <div class="column is-two-fifths">
-      <!-- <h3 style="text-align: center; font-weight: bold;">Human Demonstration</h3> -->
-      <video poster="" id="video2" autoplay controls muted loop height="100%" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
-        <!-- Your video file here -->
-        <source src="static/videos/robot_bottle_gen_final.m4v"
-        type="video/mp4">
-      </video>
-    </div>
-    <div class="column is-two-fifths">
-      <!-- <h3 style="text-align: center; font-weight: bold;">Robot Execution (Novel Object Pose)</h3> -->
-      <video poster="" id="video3" autoplay controls muted loop height="100%" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
-        <!-- Your video file here -->
-        <source src="static/videos/robot_roll_gen_final.m4v"
-        type="video/mp4">
-      </video>
-    </div>
-  </div>
-
-  <div class="columns is-centered">
-        <div class="column is-two-fifths">
-        <!-- <h3 style="text-align: center; font-weight: bold;">Human Demonstration</h3> -->
-        <video poster="" id="video2" autoplay controls muted loop height="100%" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
-          <!-- Your video file here -->
-          <source src="static/videos/robot_jacket_gen_final.m4v"
-          type="video/mp4">
-        </video>
-      </div>
-      <div class="column is-two-fifths">
-        <!-- <h3 style="text-align: center; font-weight: bold;">Robot Execution (Novel Object Pose)</h3> -->
-        <video poster="" id="video3" autoplay controls muted loop height="100%" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
-          <!-- Your video file here -->
-          <source src="static/videos/robot_stir_gen_final.m4v"
-          type="video/mp4">
-        </video>
-      </div>
-    </div>
-
-    <div class="columns is-centered">
-      <div class="column is-two-fifths">
-      <!-- <h3 style="text-align: center; font-weight: bold;">Human Demonstration</h3> -->
-      <video poster="" id="video2" autoplay controls muted loop height="100%" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
-        <!-- Your video file here -->
-        <source src="static/videos/robot_laptop_gen_final.m4v"
-        type="video/mp4">
-      </video>
-      </div>
-      <div class="column is-two-fifths">
-        <!-- <h3 style="text-align: center; font-weight: bold;">Robot Execution (Novel Object Pose)</h3> -->
-        <video poster="" id="video3" autoplay controls muted loop height="100%" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
-          <!-- Your video file here -->
-          <source src="static/videos/robot_cut_gen_final.m4v"
-          type="video/mp4">
-        </video>
-      </div>
-    </div>
-
-  </br>
-  <h2 class="title is-4" style="margin-left: 11%;">Screw Action Execution with Left-Hand Trajectory</h2>
-  <div class="columns is-centered" style="margin-left: 11%;margin-right: 9%;text-align: justify;">
-    <p>The following video shows the stir task with a non-zero left-hand motion. Since ScrewMimic defines the screw axis of manipulation 
-    as the relative motion between both hands, the same screw action can be used even when there exists any absolute motion of one of them 
-    (left hand).</p>
-  </div>
-  <div class="columns is-centered" style="margin-left: 11%;margin-right: 9%;text-align: justify;">
-    <video poster="" id="video3" autoplay controls muted loop height="100%" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%; max-width: 70%;">
-      <!-- Your video file here -->
-      <source src="static/videos/stir_tau_l.mov"
-      type="video/mp4">
-    </video>
   </div>
 </section>
+
 
 <!-- Paper poster -->
 <!-- <section class="hero is-small is-light">
@@ -443,7 +408,7 @@
 
 
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
+<!--   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>
@@ -455,7 +420,7 @@
         }
       </code></pre>
     </div>
-</section>
+</section> -->
 <!--End BibTex citation -->
 
 
@@ -466,9 +431,7 @@
         <div class="content">
 
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
           </p>
 
         </div>
