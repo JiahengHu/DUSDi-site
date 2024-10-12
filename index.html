@@ -195,7 +195,7 @@
         <div class="content has-text-justified">
           <p>
             Unsupervised skill discovery holds the promise of improving the sample efficiency of Reinforcement Learning, by learning a set of reusable skills through reward-free interaction with the environment. These skills can be later recombined to tackle multiple downstream tasks more efficiently. In practice, however, learning to use and recombine these skills can be extremely hard for an agent trying to solve downstream tasks, especially in complex domains.
-            We propose Disentangled Unsupervised Skill Discovery (DUSDi), a method for learning disentangled skills that can be efficiently reused to solve downstream tasks. DUSDi decomposes skills into disentangled components, where each skill component only affects one factor of the state space. Importantly, these skill components can be concurrently composed to generate low-level actions, and efficiently chained to tackle downstream tasks through hierarchical Reinforcement Learning. DUSDi defines a novel mutual-information-based objective to enforce disentanglement between the influences of different skill components, and utilizes value factorization to optimize this objective efficiently. Evaluated in a set of challenging environments, DUSDi successfully learns disentangled skills, and significantly outperforms previous skill discovery methods when it comes to applying the learned skills to solve downstream tasks. 
+            We propose Disentangled Unsupervised Skill Discovery (DUSDi), a method for learning disentangled skills that can be efficiently reused to solve downstream tasks. DUSDi decomposes skills (e.g. learning to drive) into <b>disentangled components</b> (e.g. controlling speed, steering, and headlights), where each skill component only affects one factor of the state space. Importantly, these skill components can be <b>concurrently composed</b> to generate low-level actions, and efficiently chained to tackle downstream tasks through hierarchical Reinforcement Learning. DUSDi defines a novel mutual-information-based objective to enforce disentanglement between the influences of different skill components, and utilizes value factorization to optimize this objective efficiently. Evaluated in a set of challenging environments, DUSDi successfully learns disentangled skills, and significantly outperforms previous skill discovery methods when it comes to applying the learned skills to solve downstream tasks. 
           </p>
         </div>
         <!-- Your image here -->
@@ -216,7 +216,7 @@
                 <h2 class="title is-4 " id="Simulation examples">Random Skills Visualization</h2>
 
                 <p>
-                    Just like other skill discovery methods, we can visualize DUSDi skills by randomly sampling a skill vector z and visualize the skill policy's behaviors conditioning on z. Here are some results.
+                    We first examine DUSDi skills by randomly sampling a skill vector z and check if the skill policy induces divers behaviors. Here are some results.
                 </p>
 
 
@@ -281,18 +281,18 @@
         <div class="column is-two-fifths">
           <div class="card-mid">
             <div class="card-content">
-              <div class="image-grid-two">
+              <div class="image-grid-part">
                 <img src="static/videos/ps1.gif"  style="border: 2px solid black;">
                 <img src="static/videos/ps2.gif"  style="border: 2px solid black;">
               </div>
-              <h3>In Particle, perturbing one skill dimension would cause only one agent to shift its interaction with the landmark (in this case the grey agent)</h3>
+              <h3>In Particle, perturbing one skill dimension would cause only one particle to shift its interaction with the landmark (in this case the grey agent)</h3>
             </div>
           </div>
         </div>
         <div class="column is-two-fifths">
           <div class="card-mid">
             <div class="card-content">
-              <div class="image-grid-two">
+              <div class="image-grid-part">
                 <img src="static/videos/media(17).gif"  style="border: 2px solid black;">
                 <img src="static/videos/media(18).gif"  style="border: 2px solid black;">
               </div>
@@ -307,7 +307,7 @@
         <div class="column is-two-fifths">
           <div class="card-mid">
             <div class="card-content">
-              <div class="image-grid-two">
+              <div class="image-grid-part">
                 <img src="static/videos/media(19).gif"  style="border: 2px solid black;">
                 <img src="static/videos/media(20).gif"  style="border: 2px solid black;">
               </div>
@@ -318,7 +318,7 @@
         <div class="column is-two-fifths">
           <div class="card-mid">
             <div class="card-content">
-              <div class="image-grid-two">
+              <div class="image-grid-part">
                 <img src="static/videos/media(13).gif" alt="Image 1">
                 <img src="static/videos/media(14).gif" alt="Image 2">
               </div>
@@ -373,18 +373,18 @@
 </section>
 
 
-<section class="section hero">
-  <div class="container">
+<section class="section hero ">
+  <div class="container is-max-desktop">
     <h2 class="title is-2" style="text-align: center;">Experiments</h2>
     <div class="columns is-centered">
-      <div class="column is-four-fifths is-centered has-text-centered">
+      <div class="column is-max-desktop is-centered has-text-centered">
                 <!-- Your image here -->
                   <div class="content has-text-justified">
           <p>
             These disentangled skills can then be used as low-level policy in a hierarchical RL setting, achieving significantly superior downstream task learning performance compared to previous state-of-the-art methods. Please checkout our paper and code for a detailed description of our methods and experiments.
           </p>
         </div>
-        <img src="static/images/results.png" width="90%"/>
+        <img src="static/images/results.png" width="80%"/>
 
       </div>
     </div>

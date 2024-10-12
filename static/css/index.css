@@ -250,3 +250,15 @@ body {
   height: auto; /* Maintains the aspect ratio */
   border-radius: 5px; /* Optional: Adds rounded corners to images */
 }
+
+.image-grid-part {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two images per row */
+  gap: 10px; /* Space between images */
+}
+
+.image-grid-part img {
+  width: 90%; /* Ensures images take up full width of grid cells */
+  height: auto; /* Maintains the aspect ratio */
+  border-radius: 5px; /* Optional: Adds rounded corners to images */
+}
